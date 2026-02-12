@@ -15,7 +15,7 @@ A ready-to-use workspace template that turns any AI agent into a persistent, evo
 **Your agent gets:**
 - **Identity** — A name, personality, and soul (not just "helpful assistant")
 - **Memory** — Daily logs + curated long-term memory that survive across sessions
-- **Skills** — 17 pre-built capabilities (file handling, web research, social media, and more)
+- **Skills** — 14 pre-built capabilities (file handling, research, social media, and more)
 - **Growth** — The more you work together, the smarter it gets
 
 ## The Idea
@@ -74,7 +74,7 @@ my-agent/
 ├── .claude/commands/            # Slash commands
 │   ├── BOOTSTRAP.md             # First-run onboarding (/BOOTSTRAP)
 │   └── UPDATE_MEMORY.md         # Memory maintenance (/UPDATE_MEMORY)
-├── .claude/skills/              # 17 pre-built capabilities
+├── .claude/skills/              # 14 pre-built capabilities
 ├── memory/                      # Daily journal (YYYY-MM-DD.md)
 ├── drafts/                      # Work-in-progress documents
 └── workspace/                   # Temp area (gitignored)
@@ -96,15 +96,15 @@ my-agent/
 
 **USER.md**: Who you are — so they can adapt to your style, timezone, preferences.
 
-### Skills (17 Pre-Built)
+### Skills (14 Pre-Built)
 
 | Category | Skills |
 |----------|--------|
-| **Documents** | PDF, Word (.docx), Excel (.xlsx), PowerPoint (.pptx) |
-| **Research** | Multi-AI parallel research, web summarization |
+| **Documents** | PDF, Nano-PDF, Word (.docx), Excel (.xlsx), PowerPoint (.pptx) |
+| **Research** | Web summarization |
 | **Social** | X/Twitter (bird), iMessage |
 | **Apple** | Notes, Reminders |
-| **Media** | Gemini image generation, Remotion video |
+| **Media** | Remotion video |
 | **Dev** | GitHub CLI, Peekaboo (macOS UI automation) |
 | **Meta** | Skill creator (make your own skills) |
 
@@ -180,7 +180,7 @@ MIT — do whatever you want with it.
 **你的 Agent 会拥有：**
 - **身份** — 名字、人格、灵魂（不再是「有用的助手」）
 - **记忆** — 每日日志 + 精炼的长期记忆，跨会话存活
-- **技能** — 17 个预置能力（文档处理、网络研究、社交媒体等）
+- **技能** — 14 个预置能力（文档处理、研究、社交媒体等）
 - **成长** — 你们合作越多，它就越聪明
 
 ## 核心理念
@@ -239,7 +239,7 @@ my-agent/
 ├── .claude/commands/            # 快捷指令
 │   ├── BOOTSTRAP.md             # 冷启动引导（/BOOTSTRAP）
 │   └── UPDATE_MEMORY.md         # 记忆维护（/UPDATE_MEMORY）
-├── .claude/skills/              # 17 个预置技能
+├── .claude/skills/              # 14 个预置技能
 ├── memory/                      # 每日日志（YYYY-MM-DD.md）
 ├── drafts/                      # 工作草稿
 └── workspace/                   # 临时工作区（不进 git）
@@ -261,15 +261,15 @@ my-agent/
 
 **USER.md**：你是谁——让它适应你的风格、时区、偏好。
 
-### 技能（17 个预置）
+### 技能（14 个预置）
 
 | 类别 | 技能 |
 |------|------|
-| **文档** | PDF、Word (.docx)、Excel (.xlsx)、PowerPoint (.pptx) |
-| **研究** | 多 AI 并行研究、网页摘要 |
+| **文档** | PDF、Nano-PDF、Word (.docx)、Excel (.xlsx)、PowerPoint (.pptx) |
+| **研究** | 网页摘要 |
 | **社交** | X/Twitter (bird)、iMessage |
 | **Apple** | 备忘录、提醒事项 |
-| **媒体** | Gemini 图片生成、Remotion 视频 |
+| **媒体** | Remotion 视频 |
 | **开发** | GitHub CLI、Peekaboo（macOS UI 自动化） |
 | **元技能** | 技能创建器（自己做技能） |
 
