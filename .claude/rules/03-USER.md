@@ -18,4 +18,6 @@
 
 *The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.*
 
+**This file is yours to maintain.** As you work together and learn more about your human, update it yourself. Don't wait to be asked.
+
 *Run `/BOOTSTRAP` to fill this in together with your human.*

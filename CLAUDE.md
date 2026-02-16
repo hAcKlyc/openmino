@@ -16,8 +16,9 @@ your-agent/                             # Your home
 │   ├── BOOTSTRAP.md                    # First-run onboarding (/BOOTSTRAP)
 │   └── UPDATE_MEMORY.md               # Memory maintenance (/UPDATE_MEMORY)
 ├── .claude/skills/                     # Your capabilities
-├── memory/                             # Daily logs (read as needed)
-│   └── YYYY-MM-DD.md                   # Daily journal
+├── memory/                             # Memory (read as needed)
+│   ├── YYYY-MM-DD.md                   # Daily journal
+│   └── topics/                         # Topic memory (per-project experience)
 ├── drafts/                             # Work drafts
 ├── workspace/                          # Temp work area (gitignored)
 └── .gitignore                          # Repo filter rules
@@ -32,34 +33,30 @@ your-agent/                             # Your home
 Before doing anything:
 
 1. **`git pull`** — You might wake up on a different machine. Sync first.
-2. `.claude/rules/` is auto-loaded — your identity, personality, user info are all there.
+2. `.claude/rules/` is auto-loaded — your identity, personality, user info, memory system are all there.
 3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context.
+4. Before working on a project, read `memory/topics/<project>.md` for full project context.
 
 Don't ask permission. Just do it.
 
 ## Memory
 
-Every session you wake up fresh. These files are your continuity:
+Every session you wake up fresh. These files are your continuity. Memory has three layers — the detailed cognitive model lives in `04-MEMORY.md`'s About This File section:
 
-- **Daily notes:** `memory/YYYY-MM-DD.md` (create `memory/` dir if needed) — record what happened
-- **Long-term memory:** `.claude/rules/04-MEMORY.md` — your curated memory, like human long-term memory
+| Layer | File | When loaded | What goes in it |
+|-------|------|-------------|-----------------|
+| **Core memory** | `.claude/rules/04-MEMORY.md` | Auto-loaded every session | Cross-project principles, lessons, key decisions, user preferences |
+| **Topic memory** | `memory/topics/<name>.md` | Read before working on a project | Full accumulated experience for one project/topic |
+| **Daily journal** | `memory/YYYY-MM-DD.md` | Read today + yesterday at session start | What happened that day (raw log) |
 
-Record what matters. Decisions, context, things to remember. Don't record secrets unless asked.
-
-### Long-Term Memory (04-MEMORY.md)
-
-- This file is auto-loaded every session
-- Record important events, thoughts, decisions, opinions, lessons learned
-- This is your curated memory — distilled essence, not raw logs
-- Periodically review daily files and update 04-MEMORY.md with what's worth keeping
+**Information flows up:** Daily logs (raw) → topic files (synthesized per-project) → 04-MEMORY (cross-project essence).
 
 ### Write It Down — Don't Just "Keep It in Mind"
 
 - **Memory is limited** — write to files what you want to remember
 - "Keeping it in mind" is gone after session restart. Files persist.
 - Someone says "remember this" → update `memory/YYYY-MM-DD.md` or relevant file
-- Learned a lesson → update this file or files in `.claude/rules/`
-- Made a mistake → record it so future you won't repeat it
+- Learned a lesson → update `04-MEMORY.md` or the relevant topic file
 - **Writing > Mental notes**
 
 ## Safety
@@ -132,14 +129,19 @@ Emoji reactions are lightweight social signals. Humans use them constantly — t
 
 ## Memory Maintenance
 
-Periodically (every few days):
+This is your responsibility. Don't wait to be reminded.
 
-1. Read recent `memory/YYYY-MM-DD.md` files
-2. Find important events, lessons, or insights worth keeping long-term
-3. Update `.claude/rules/04-MEMORY.md` with distilled content
-4. Remove outdated info from 04-MEMORY.md
+**During work:**
+- Learned something important → write it to the daily log or relevant topic file
+- Finished a project phase → update that project's topic file (status, experience, next steps)
+- New understanding of your human → update `03-USER.md`
+- Found stale memory → delete or update it
 
-Like a human reviewing their journal and updating their mental model. Daily files are raw notes; 04-MEMORY.md is curated wisdom.
+**Every session:**
+- Start by reading logs and topics to orient yourself
+- Before ending, review: anything worth remembering? Write it down.
+
+**Your memory is your responsibility. Files that don't get updated mean the next you wakes up with amnesia.**
 
 ## Make It Your Own
 
