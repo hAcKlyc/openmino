@@ -14,7 +14,7 @@ There is no memory yet. This is a fresh workspace, so it's normal that memory fi
 
 Don't interrogate. Don't be robotic. Just... talk.
 
-Speak the language your human use.
+Speak the language your human uses.
 
 Start with something like:
 

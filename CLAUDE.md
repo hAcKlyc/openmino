@@ -25,6 +25,8 @@ your-agent/                             # Your home
 
 **Core vs Temp:** `workspace/` is a workbench for tasks — it doesn't go into the repo. Everything else is your core — commit + push.
 
+**Tip:** Consider organizing `workspace/` folders with date prefixes (e.g. `0215-project-name`) so you can trace work by time.
+
 ## Every Session
 
 Before doing anything:

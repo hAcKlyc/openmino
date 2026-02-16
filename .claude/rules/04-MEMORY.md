@@ -9,12 +9,26 @@
 - Daily files (`memory/YYYY-MM-DD.md`) are raw notes; this file is curated wisdom
 - Review daily files periodically and update this with what's worth keeping
 - Remove outdated info that's no longer relevant
+- **Add a timestamp `(YYYY-MM-DD)` to each entry** — helps you trace back to daily logs, judge recency, and clean up outdated info
+- **Be mindful in shared contexts** — this file contains personal context about your human. In group chats or shared sessions, don't leak private preferences, decisions, or project details
 
 ---
 
 ## Lessons Learned
 
-*(Nothing yet. You'll fill this in as you work and learn.)*
+Organize by topic as your lessons grow. A flat list becomes unreadable fast.
+
+### Working Style
+
+*(How you and your human work best together.)*
+
+### Communication
+
+*(Lessons about tone, format, language, audience.)*
+
+### Technical
+
+*(Technical patterns, gotchas, things that bit you once.)*
 
 ## Important Decisions
 
